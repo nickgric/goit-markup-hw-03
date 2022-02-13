@@ -1,0 +1,128 @@
+/* variables -- start */
+
+:root {
+    --font-logo: 'Raleway', sans-serif;
+    --font-main: 'Roboto', sans-serif;
+    --color-accent: #2196F3;
+    --color-main: #361212;
+    --color-invert: #ffffff;
+    --color-sub: #757575;
+    --color-fill-accent: #2196F3;
+    --color-fill-accent-hover: #188CE8;
+    --color-fill-dark: #2F303A;
+    --color-fill-light-fill: #F5F4FA;
+}
+
+/* variables -- end */
+
+/* normalize -- start */
+
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+} 
+
+address {
+    font-style: normal;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    color: var(--color-accent);
+}
+
+.list, .item {
+    list-style: none;
+}
+
+body {
+    color: var(--color-main);
+}
+
+/* normalize -- end */
+
+
+/* allpage -- start */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-main);
+}
+
+/* allpage -- end */
+
+
+/* header -- start */
+
+    
+
+
+/* header -- end */
+
+
+/* hero -- start */
+
+/* hero -- end */
+
+
+/* whywe -- start */
+
+/* whywe -- end */
+
+
+/* whatwedo -- start */
+
+/* whatwedo -- end */
+
+
+/* ourteam -- start */
+
+/* ourteam -- end */
+
+
+/* portfolio -- start */
+
+/* portfolio -- end */
+
+
+/* footer -- start */
+
+/* footer -- end */
+
+
+/* hidden -- start */
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* hidden -- end */
