@@ -7,10 +7,12 @@
     --color-main: #361212;
     --color-invert: #ffffff;
     --color-sub: #757575;
+    --color-logo-header: #000000;
+    --color-logo-footer: #ffffff;
     --color-fill-accent: #2196F3;
     --color-fill-accent-hover: #188CE8;
     --color-fill-dark: #2F303A;
-    --color-fill-light-fill: #F5F4FA;
+    --color-fill-light: #F5F4FA;
 }
 
 /* variables -- end */
@@ -26,6 +28,10 @@ ul, li {
     list-style: none;
 }
 
+a {
+    color: var(--color-main);
+}
+
 button {
     cursor: pointer;
     font-family: inherit;
@@ -35,26 +41,24 @@ address {
     font-style: normal;
 }
 
-li a {
+header a, footer a {
     text-decoration: none;
 }
 
-li a:hover {
-    color: var(--color-accent);
-}
 
 .list, .item {
     list-style: none;
-}
-
-body {
-    color: var(--color-main);
 }
 
 /* normalize -- end */
 
 
 /* allpage -- start */
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-main);
+}
 
 .container {
     width: 1200px;
@@ -64,50 +68,196 @@ body {
     margin-right: auto;
 }
 
-body {
-    font-family: var(--font-main);
-    color: var(--color-main);
+/* allpage -- end */
+
+
+/* logo -- start */
+
+.logo-header {
+    display: block;
+    margin-right: 93px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    max-height: 80px;
+
+    color: var(--color-logo-header);
+    font-family: var(--font-logo);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
-/* allpage -- end */
+.logo-footer {
+    color: var(--color-logo-footer);
+    font-family: var(--font-logo);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo-accent {
+    color: var(--color-accent);
+}
+
+
+/* logo -- end */
 
 
 /* header -- start */
 
-    
+.header .container {
+    display: flex;
+    align-items: center;
+}
 
+nav ul {
+    display: flex;
+}
+
+nav li:not(:last-child), .header-contacts li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+nav a {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-height: 80px;
+
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-contacts a {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-height: 80px;
+
+    color: var(--color-sub);
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.current-page {
+    color: var(--color-accent);
+}
+
+nav a:hover, nav a:focus, .header-contacts a:hover, .header-contacts a:focus{
+    color: var(--color-accent);
+}
 
 /* header -- end */
 
 
 /* hero -- start */
 
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: var(--color-fill-dark);
+}
+
+h1 {
+    margin-bottom: 30px;
+
+    color: var(--color-invert);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero button {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+}
+
 /* hero -- end */
 
 
 /* whywe -- start */
+
+.whywe {
+    margin-top: 94px;
+}
 
 /* whywe -- end */
 
 
 /* whatwedo -- start */
 
+.whatwedo {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* whatwedo -- end */
 
 
 /* ourteam -- start */
 
+.ourteam {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color: var(--color-fill-light);
+}
+
 /* ourteam -- end */
 
 
-/* portfolio -- start */
+/* projects -- start */
 
-/* portfolio -- end */
+.projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* projects -- end */
 
 
 /* footer -- start */
 
+
+
 /* footer -- end */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--color-fill-dark);
+}
+
+.footer-contacts a:focus, .footer-contacts a:hover  {
+    text-decoration: underline;
+}
 
 
 /* hidden -- start */
